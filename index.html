@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Join Discussion Group</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+<h1>Join Discussion Group</h1>
+
+<input id="name" placeholder="Your Name">
+
+<input id="reg" placeholder="Registration Number">
+
+<select id="gender">
+<option value="">Gender</option>
+<option value="female">Female</option>
+<option value="male">Male</option>
+</select>
+
+<button onclick="registerStudent()">Submit</button>
+
+<p id="msg"></p>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</body>
+</html>
