@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Admin Groups</title>
-<link rel="stylesheet" href="style.css">
-
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
-
 <body>
 
 <h1>Admin Dashboard</h1>
 
 <div id="groups"></div>
 
-<script src="admin.js"></script>
-
-async function loadStudents() {
-  let { data: students, error } = await supabase
-    .from("students")
-    .select("*")
-
-  if (error) {
-    console.error(error)
-    return
-  }
-
-  createGroups(students) // your grouping logic here
-}
-
+<script type="module" src="admin.js"></script>
 </body>
 </html>
