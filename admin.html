@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 
 <h1>Admin Dashboard</h1>
 
-<div id="groups"></div>
+<div class="container">
 
+  <!-- Generate Groups Button -->
+  <button id="generateBtn">Generate Groups</button>
+
+  <!-- Groups will appear here -->
+  <div id="groups"></div>
+
+</div>
+
+<!-- Only this script -->
 <script type="module" src="admin.js"></script>
+
 </body>
 </html>
